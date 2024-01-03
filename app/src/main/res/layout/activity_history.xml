@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:contentDescription="play"
+            app:thumbTint="@color/green1" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="36dp"
+            android:layout_height="48dp"
+            android:contentDescription="play"
+            app:chipIcon="@drawable/oido16" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/blue1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
+
+    <!--
+    <SearchView
+        android:layout_width="260dp"
+        android:layout_height="30dp" />
+    -->
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fondo_gris_borde_negro"
+                android:gravity="center"
+                android:text="@string/status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_gris_borde_negro"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/fondo_gris_borde_negro"
+                android:gravity="center"
+                android:text="@string/service"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/fondo_gris_borde_negro"
+                android:gravity="center"
+                android:text="@string/actions"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="@drawable/borde_negro"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="03/05/2023 08:00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="xxxx" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro">
+
+                <Button
+                    android:id="@+id/btn_edit1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:backgroundTint="@color/grey1"
+                    android:text="@string/edit"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="SmallSp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro">
+
+                <Button
+                    android:id="@+id/btn_cancel1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:backgroundTint="@color/grey1"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="SmallSp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="@drawable/borde_negro"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10/04/2023 15:00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="xxxx" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro">
+
+                <Button
+                    android:id="@+id/btn_edit2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:backgroundTint="@color/yellow1"
+                    android:text="@string/edit"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="SmallSp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/borde_negro">
+
+                <Button
+                    android:id="@+id/btn_cancel2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:backgroundTint="@color/red1"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.9"
+                    tools:ignore="SmallSp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue1"
+        android:onClick="onBack"
+        android:text="@string/back"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>

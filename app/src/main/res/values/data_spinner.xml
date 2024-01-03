@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="services">
+        <item>manicure</item>
+        <item>pedicure</item>
+        <item>depilación con cuchilla</item>
+        <item>depilación con hilo</item>
+        <item>depilación con cera</item>
+        <item>colorimetría</item>
+        <item>pigmentación</item>
+        <item>maquillaje</item>
+        <item>cejas</item>
+        <item>pestañas</item>
+        <item>secado</item>
+        <item>planchado</item>
+        <item>cepillado</item>
+        <item>peinados</item>
+        <item>corte de pelo</item>
+        <item>repolarización de cabello</item>
+        <item>alisado permanente</item>
+        <item>asesoramiento en belleza</item>
+        <item>barbería</item>
+    </string-array>
+</resources>
